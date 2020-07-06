@@ -1,9 +1,10 @@
 
 h1 {
-	color: green;
+	color: #839791;
 	text-align: center;
 	font-family: 'Libre Baskerville', serif;
 	font-size: 50px;
+	margin-bottom: 10px;
 
 
 }
@@ -15,14 +16,12 @@ body {
 ul {
 	list-style-type: none;
 	text-align: center;
-	text-decoration: none;
 
 }
 
 li {
 	display: inline;
 	font-family: 'Open Sans', sans-serif;
-	text-decoration: none;
 	font-size: 15px;
 
 }

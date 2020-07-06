@@ -2,4 +2,4 @@ cvenv
 *.DS_Store
 *.pyc
 __pycache__
-/secrets.json
+secrets.json
