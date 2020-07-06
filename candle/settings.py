@@ -130,5 +130,13 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'templates'),
+)
 STATIC_URL = '/static/'
+STATIC_ROOT = ''
+STATICFILES_DIRS = ['/Users/nikclarks/djproj/djcandle/project/candleapp/static/'] # path to static folder
+
+
+
+
