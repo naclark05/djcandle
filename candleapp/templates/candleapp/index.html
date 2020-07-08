@@ -1,8 +1,10 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html>
+
 	<head>
-		<title>Ivy - Home</title>
+		{% block title %}<title>Ivy - Home</title>{% endblock %}
 		<link rel="stylesheet" href="{% static 'css/candleapp.css' %}">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap"> 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@300&display=swap">
@@ -16,17 +18,18 @@
 
 			<nav> 
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Candles</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="/candleapp">Home</a></li>
+					<li><a href="/candleapp/about">About</a></li>
+					<li><a href="/candleapp/shop">Candles</a></li>
+					<li><a href="/candleapp/contact">Contact</a></li>
 				</ul>
 			</nav>
-
+		{% block content %}
 			<div class="container">
 				<img src=https://images.pexels.com/photos/4620805/pexels-photo-4620805.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260 alt="candle">
 				<button class="btn" type="button"><a href="">Shop Now</a></button>
 			</div>
+		{% endblock %}
 
 		</header>
 
@@ -34,7 +37,7 @@
 
 		<footer>
 			<div class="cr">
-				<p>© Nikki Clark</p>
+				<p>© 2020 Nikki Clark</p>
 			</div>
 			
 		</footer>
